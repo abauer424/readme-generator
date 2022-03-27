@@ -29,7 +29,13 @@ To install the project, you need to use git clone and git pull from <a href ="ht
 ## Usage 
 
 When opening the repository, the user will navigate in the terminal to the develop folder by typing "cd Deveop". Once here, the user will type in the terminal "node index.js", this allows the user to create their generated README file. Once this is entered in the terminal the user will be asked a series of questions. 
-<img src="https://github.com/abauer424/forecast-locator/blob/main/assets/images/FL.png" alt="image of Forecast Locator"/>
+<img src="https://github.com/abauer424/readme-generator/blob/main/Develop/images/1.png" alt="image of terminal"/>
+
+Next you will see the series of questions that display in the terminal with the text in blue. 
+<img src="https://github.com/abauer424/readme-generator/blob/main/Develop/images/2.png" alt="image of terminal"/>
+
+Lastly you will see the generated README that was created as a test based on the answers the user provided in the terminal.
+<img src="https://github.com/abauer424/readme-generator/blob/main/Develop/images/2.png" alt="image of terminal"/>
 
 
 ## Credits
