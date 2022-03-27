@@ -1,7 +1,8 @@
 //Included packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Choices = require('inquirer/lib/objects/choices');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+
 
 // Created an array of questions for user input
 const questions = [
@@ -51,10 +52,20 @@ const questions = [
     message: 'How can the user test your app? Provide detailed instructions.'
 },
 
+//7. Questions
+{
+    type: 'input',
+    name: 'questions',
+    message: 'Please provide an email address for questions.'
+},
+
 ];
 
 //Created a function to write README file
 function writeToFile(fileName, data) {}
+
+
+
 
 // TODO: Create a function to initialize app
 function init() {}
