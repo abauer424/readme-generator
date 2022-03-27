@@ -1,46 +1,85 @@
 //Created a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if(license === 'No License'){
+    return ''
+  }
+else if(license === 'Apache license 2.0') {
+  return `![apacheBadge](https://img.shields.io/badge/License-Apache-blue)`
+}
+else if(license === 'MIT License') {
+  return `![apacheBadge](https://img.shields.io/badge/License-MIT-green)`
+}
+else if(license === 'BSD 2-clause "Simplified" license') {
+  return `![apacheBadge](https://img.shields.io/badge/License-BSD%202-green)`
+}
+
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if(license === 'MIT License'){
+    return '[View License Information](https://opensource.org/licenses/MIT)'
+  }
+  else if(license === 'BSD 2-clause "Simplified" license') {
+    return `[View License Information](https://opensource.org/licenses/BSD-2-Clause)`
+  }
+  else if(license === 'Apache license 2.0') {
+    return `[View License Information](https://opensource.org/licenses/Apache-2.0)`
+  }
+}
+  
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license,date,author) {
+  if(license === 'MIT License'){
+    return `
+    Copyright ${date} ${author}
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.title}
+  # ${data.projectTitle}
+${renderLicenseBadge(data.license)}
 
-  ## Table-Of-Contents
+  ## Table Of Contents
 
-  -[Description](#description)
-  -[Installation](#installation)
-  -[Useage](#useage)
-  -[License](#license)
-  -[Contributions](#contribution)
-  -[Testing](#test)
-  -[Questions](#questions)
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Useage](#useage)
+  * [License](#license)
+  * [Contributions](#contribution)
+  * [Testing](#test)
+  * [Questions](#questions)
 
-  ## [Description]
+  ## Description
   ${data.description}
 
-  ##[Installation]
+  ## Installation
   ${data.installation}
 
-  ##[Useage]
+  ## Useage
   ${data.useage}
 
-  ##[License]
-  ${data.license}
+  ## License
+  ${renderLicenseSection(data.license,'2022', data.author)}
+  ${renderLicenseLink(data.license)}
 
-  ##[Contribution]
+  ## Contribution
   ${data.contribution}
 
-  ##[Questions]
+  ## Questions
   Please contact me at the email address below:
   ${data.questions}
 
