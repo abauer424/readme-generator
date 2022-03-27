@@ -13,7 +13,6 @@ My README Generator can be viewed <a href ="https://abauer424.github.io/readme-g
 
 
 
-
 ## Table of Contents 
 
 * [Installation](#installation)
@@ -24,18 +23,18 @@ My README Generator can be viewed <a href ="https://abauer424.github.io/readme-g
 
 ## Installation
 
-To install the project, you need to use git clone and git pull from <a href ="https://github.com/abauer424/readme-generator">my repository.</a>
+To install the project, you need to use git clone and git pull from <a href ="https://github.com/abauer424/readme-generator">my repository.</a> After cloning its important to download NODE to your computer as well as inquirer. 
 
 
 ## Usage 
 
-Upon page load, the user will see the image below is how the page should appear. The user will see on the left hand side there is a search bar and on the right side is where the data is set to display.
+When opening the repository, the user will navigate in the terminal to the develop folder by typing "cd Deveop". Once here, the user will type in the terminal "node index.js", this allows the user to create their generated README file. Once this is entered in the terminal the user will be asked a series of questions. 
 <img src="https://github.com/abauer424/forecast-locator/blob/main/assets/images/FL.png" alt="image of Forecast Locator"/>
 
 
 ## Credits
 
-Credit to Amber Bauer, W3Schools.com and AskBCS.
+Credit to Amber Bauer, W3Schools.com and Tutor.
 
 
 ## License
