@@ -11,7 +11,7 @@ I learned and enjoyed using the integrated terminal to test my code and see what
 
 My README Generator can be viewed <a href ="https://abauer424.github.io/readme-generator/"> here.</a> 
 
-Please view the live demonstration <a href ="https://www.dropbox.com/s/ppz13a3bo7rpf6e/Amber-Bauer.mp4?dl=0"> here. </a>
+Please view the walkthrough video <a href ="https://www.dropbox.com/s/ppz13a3bo7rpf6e/Amber-Bauer.mp4?dl=0"> here. </a>
 
 
 
