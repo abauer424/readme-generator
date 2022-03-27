@@ -45,14 +45,14 @@ const questions = [
     name: 'contribution',
     message: 'If you would like other developers to contribute it, you can include guidelines for how to do so here.'
 },
-//6. Testing
+//7. Testing
 {
     type: 'input',
     name: 'test',
     message: 'How can the user test your app? Provide detailed instructions.'
 },
 
-//7. Questions
+//8. Questions
 {
     type: 'input',
     name: 'questions',
