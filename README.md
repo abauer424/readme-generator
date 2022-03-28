@@ -9,7 +9,7 @@ This problem solved creating a README file by allowing the user to answer a few 
 I learned and enjoyed using the integrated terminal to test my code and see what needs fixing and what works along the way. 
 
 
-My README Generator can be viewed <a href ="https://abauer424.github.io/readme-generator/"> here.</a> 
+My README Generator repository can be viewed <a href ="https://github.com/abauer424/readme-generator"> here.</a> 
 
 Please view the walkthrough video <a href ="https://www.dropbox.com/s/ppz13a3bo7rpf6e/Amber-Bauer.mp4?dl=0"> here. </a>
 
